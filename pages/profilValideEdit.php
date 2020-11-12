@@ -153,7 +153,7 @@ if (isset($_SESSION['Personid'])) {
 
                                     <div class="mt-md-4 mt-3 mt-sm-0 width">
                                         <a href="deleteProfile.php?Personid=<?= $_SESSION['Personid'] ?>" class="btn btn-danger mt-2 ml-2">Delete</a>
-                                        <a href="profilValider.php?Personid=1" class="btn btn-dark mt-2"><i class="fas fa-undo-alt"></i></i>Cancel</a>
+                                        <a href="profilValider.php?Personid=<?= $_SESSION['Personid'] ?>" class="btn btn-dark mt-2"><i class="fas fa-undo-alt"></i></i>Cancel</a>
                                     </div>
                                 </div>
 
