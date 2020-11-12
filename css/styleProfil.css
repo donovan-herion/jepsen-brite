@@ -1,0 +1,27 @@
+
+.marginUserInfo{
+  margin-left: 20px;
+}
+
+.form-group .icons{
+	top: -5px;
+}
+
+#iconPageProfile{
+	position: relative;
+	left: 400px;
+	width: 100%;
+	
+
+}
+
+.width{
+	width: 100%;
+}
+
+a{
+	padding: 10px;
+	color: white;
+	margin-right: 2%;
+
+}
