@@ -21,7 +21,7 @@ if (isset($_POST['submitConnexion'])) {
             $_SESSION['FirstName'] = $userinfo['FirstName'];
             $_SESSION['LastName'] = $userinfo['LastName'];
             $_SESSION['Email'] = $userinfo['Email'];
-            header("Location: profilValider.php?Personid=" . $_SESSION['Personid']);
+            header("Location: ../index.php");
         } else {
             $erreur = "Mauvais mail ou mot de passe !";
         }
