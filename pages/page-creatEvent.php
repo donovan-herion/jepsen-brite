@@ -32,15 +32,6 @@
 			<div>
 				<a class="logo" href="../index.php">Jepsen-brite<span class="text-primary">.</span></a>
 			</div>
-			<!-- Navigation Menu-->
-			<div id="navigation">
-				<ul class="navigation-menu" style="align-items:center;">
-					<li><a href="page-login.php">Login</a></li>
-				</ul>
-				<!--end navigation menu-->
-				<!-- End Logo container-->
-			</div>
-			<!--end container-->
 	</header>
 	<!--end header-->
 	<!-- Navbar End -->

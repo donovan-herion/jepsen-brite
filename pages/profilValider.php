@@ -77,12 +77,6 @@ if (isset($_GET['Personid']) and $_GET['Personid'] > 0) {
                             <div class="col-lg-12 text-center">
                                 <div class="page-next-level">
                                     <h4 class="title"> Account Setting </h4>
-                                    <ul class="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
-                                        <li><a href="index.html" class="text-uppercase font-weight-bold text-dark">Home</a></li>
-                                        <li><a href="#" class="text-uppercase font-weight-bold text-dark">Pages</a></li>
-                                        <li><a href="#" class="text-uppercase font-weight-bold text-dark">Account</a></li>
-
-                                    </ul>
                                 </div>
                             </div>
                             <!--end col-->
@@ -116,7 +110,10 @@ if (isset($_GET['Personid']) and $_GET['Personid'] > 0) {
                             <h5 class="text-md-left text-center">Personal Detail :</h5>
 
                             <div class="mt-3 text-md-left text-center d-sm-flex">
-                                <img src="../images/client/05.jpg" class="avatar float-md-left avatar-medium rounded-pill shadow mr-md-4" alt="">
+                                <?php
+                                $GravatarHash = md5(strtolower(trim($userinfo['Email'])));
+                                ?>
+                                <img src="<?= "https://www.gravatar.com/avatar/" . $GravatarHash ?>" style="width:130px;" class="avatar float-md-left avatar-medium rounded-pill shadow mr-md-4" alt="">
 
                                 <div class="mt-md-4 mt-3 mt-sm-0" id="iconPageProfile">
                                     <a href="profilValideEdit.php" class="rounded-pill bg-dark"><i class="mdi mdi-tools" title="Edit Profile"></i>Edit Profile</a>
