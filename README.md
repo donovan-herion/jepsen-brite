@@ -2,7 +2,7 @@
 
 [Link to the app](https://j-brite.herokuapp.com/)
 
-This website is the first full stack project that I created
+This website is the first full stack project that I created.
 
 - CRUD system
 
@@ -20,4 +20,4 @@ This website is the first full stack project that I created
 **clearDB**
 **DBeaver**
 
-![gif](https://media.giphy.com/media/3ov9jIfl4JYm4usDmg/giphy.gif)
+![gif](https://media.giphy.com/media/3ohjUNmXDfPcfgNuqA/giphy.gif)
