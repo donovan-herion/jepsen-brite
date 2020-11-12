@@ -20,4 +20,4 @@ This website is the first full stack project that I created.
 **clearDB**
 **DBeaver**
 
-![gif](https://media.giphy.com/media/3ohjUNmXDfPcfgNuqA/giphy.gif)
+![gif](https://media.giphy.com/media/5biwXSljXvxDj71bLA/giphy.gif)
