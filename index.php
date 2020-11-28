@@ -185,12 +185,12 @@ $Parsedown = new Parsedown();
 
                 <?php if (isset($_SESSION['FirstName'])) { ?>
                     <!--Add an Event-->
-                    <a href="pages/page-creatEvent.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2 courses-desc" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <a href="pages/page-creatEvent.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
                         <img src="images/plus.png" style="width: 70%; ">
                     </a>
                 <?php } else { ?>
                     <!--Add an Event-->
-                    <a href="pages/page-login.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2 courses-desc" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <a href="pages/page-login.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
                         <img src="images/plus.png" style="width: 70%; ">
                     </a>
                 <?php } ?><p></p>
@@ -210,14 +210,13 @@ $Parsedown = new Parsedown();
 
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="courses-desc position-relative overflow-hidden rounded border">
-                            <div class="position-relative d-block overflow-hidden">
-                                <img src="<?php echo $row["Img"]; ?>" class="img-fluid rounded-top mx-auto" alt="">
+                            <div class="position-relative d-block overflow-hidden img-background" style="height: 200px; background-image: url(<?= $row["Img"]; ?>); background-size: cover;">
                             </div>
                             <div class="content p-3"><br>
                                 <h5><a href="javascript:void(0)" class="title text-dark"></a></h5>
                                 <div class="fees">
                                     <ul class="list-unstyled mb-0 numbers">
-                                        <li><i class="mdi mdi-timer text-muted"></i> <?php echo $row["Title"] . '<br>'; ?></li><br>
+                                        <li><i class="mdi mdi-information-outline text-muted"></i> <?php echo $row["Title"] . '<br>'; ?></li><br>
                                         <li><i class="mdi mdi-timer text-muted"></i> <?php echo $row["dt"] . '<br>'; ?></li>
                                         <li><i class="mdi mdi-city text-muted"></i> <?php echo $row["Category"] . '<br>'; ?></li><br>
                                         <li><i class="mdi mdi-message-text-outline"></i> <?php echo $row["Dsc"] . '<br>'; ?></li><br>
