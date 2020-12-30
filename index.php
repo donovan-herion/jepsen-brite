@@ -209,12 +209,12 @@ $Parsedown = new Parsedown();
 
                 <?php if (isset($_SESSION['FirstName'])) { ?>
                     <!--Add an Event-->
-                    <a href="pages/page-creatEvent.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <a href="pages/page-creatEvent.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2 add-event" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
                         <img src="images/plus.png" style="width: 70%; ">
                     </a>
                 <?php } else { ?>
                     <!--Add an Event-->
-                    <a href="pages/page-login.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <a href="pages/page-login.php" class="col-lg-4 col-md-6 col-12 mt-4 pt-2 add-event" style="cursor: pointer; background-color:rgba(58, 31, 61, 0.02); border: 1px #eee solid; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
                         <img src="images/plus.png" style="width: 70%; ">
                     </a>
                 <?php } ?><p></p>

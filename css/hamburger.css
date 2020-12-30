@@ -43,10 +43,14 @@
   }
 
   .navigation-menu > li > a {
-
     font-size: 25px !important;
     border: 2px solid #495057;
     border-radius: 10px;
   }
 
+  /* remove add event button on mobile */
 
+  .add-event {
+    display: none !important;
+  }
+}
