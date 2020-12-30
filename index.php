@@ -35,6 +35,7 @@ $Parsedown = new Parsedown();
     <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/hamburger.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 
@@ -56,6 +57,9 @@ $Parsedown = new Parsedown();
             <!-- Logo -->
             <div>
                 <a class="logo" href="index.php">Jepsen-Brite<span class="text-primary">.</span></a>
+            </div>
+            <div id="hamburger-icon">
+                <i class="mdi mdi-menu"></i>
             </div>
             <!-- Home & Categories-->
             <div id="navigation">
@@ -91,8 +95,28 @@ $Parsedown = new Parsedown();
                         <li><a href="pages/page-login.php">Login</a></li>
                     <?php } ?>
                 </ul>
+
+            </div>
+
+
+            <!-- responsive navigation hamburger -->
+
+            <div id="hamburger-navigation">
+                <ul class="navigation-menu" style="align-items:center;">
+                    <li id="accueil"><a href="index.php">Accueil</a></li>
+
+                    </li>
+
+                    <?php if (isset($_SESSION['FirstName'])) { ?>
+                        <li><a href="pages/profilValider.php?Personid=<?= $_SESSION['Personid'] ?>">Mon Compte</a></li>
+                        <li><a href="pages/deconnexion-index.php">Logout <?php echo $_SESSION['FirstName'] ?></a></li>
+                    <?php } else { ?>
+                        <li><a href="pages/page-login.php">Login</a></li>
+                    <?php } ?>
+                </ul>
             </div>
         </div>
+
     </header>
     <!-- Navbar End -->
 
@@ -448,7 +472,8 @@ INNER JOIN persons p ON c.person_id = p.Personid ORDER BY id DESC");
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/flexslider.init.js"></script>
         <!-- Counter -->
-        <script src="js/counter.init.js "></script>
+        <script src="js/counter.init.js"></script>
+        <script src="js/hamburger.js"></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
 </body>
