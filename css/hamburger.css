@@ -38,14 +38,13 @@
   }
 
   .navigation-menu > li {
-    background-color: #ffe !important;
     border-radius: 10px;
     color: #495057 !important;
   }
 
   .navigation-menu > li > a {
 
-    font-size: 30px !important;
+    font-size: 25px !important;
     border: 2px solid #495057;
     border-radius: 10px;
   }

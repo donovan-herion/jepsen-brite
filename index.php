@@ -240,9 +240,9 @@ $Parsedown = new Parsedown();
                                 <h5><a href="javascript:void(0)" class="title text-dark"></a></h5>
                                 <div class="fees">
                                     <ul class="list-unstyled mb-0 numbers">
-                                        <li><i class="mdi mdi-information-outline text-muted"></i> <?php echo $row["Title"] . '<br>'; ?></li><br>
-                                        <li><i class="mdi mdi-timer text-muted"></i> <?php echo $row["dt"] . '<br>'; ?></li>
-                                        <li><i class="mdi mdi-city text-muted"></i> <?php echo $row["Category"] . '<br>'; ?></li><br>
+                                        <li><i class="mdi mdi-flag-outline"></i> <?php echo $row["Title"] . '<br>'; ?></li><br>
+                                        <li><i class="mdi mdi-timer "></i> <?php echo $row["dt"] . '<br>'; ?></li><br>
+                                        <li><i class="mdi mdi-check-circle-outline"></i> <?php echo $row["Category"] . '<br>'; ?></li><br>
                                         <li><i class="mdi mdi-message-text-outline"></i> <?php echo $row["Dsc"] . '<br>'; ?></li><br>
                                         <li><i class="mdi mdi-account-box-outline"></i> <?php echo $row["FirstName"] . " " . $row["LastName"] . '<br>'; ?></li><br>
                                         <?php if (!empty($_SESSION['Personid'])) {
